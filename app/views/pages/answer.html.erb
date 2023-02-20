@@ -1,0 +1,10 @@
+<h1> STUPID COACHING</h1>
+<%= @question %>
+<% if @question == "I am going to work right now!"%>
+      <p>Great!</p>
+     <% elsif @question.end_with?("?")%>
+       <p>Silly question, get dressed and go to work!</p>
+     <%else%>
+       <p>I don't care, get dressed and go to work!</p>
+     <% end %>
+<%= link_to "Ask it bro", ask_path %>
